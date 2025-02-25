@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои резюме</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts_all.js"></script>
+</head>
+<body style="padding: 20px;">
+  <div id="resumeList">
+    <h1 >Мои резюме</h1>
+    <button onclick="document.location='index.html'" id="addResume" title="Добавить">Создать резюме</button>
+    <ul id="resumeItems">
+      <!-- Сюда будут динамически добавляться резюме -->
+    </ul>
+
+    <button style="display: none;" id="deleteSelected" onclick="deleteSelectedResumes()">Удалить выбранные</button>
+  </div>
+</body>
+</html>

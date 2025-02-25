@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+ <html lang="ru">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Конструктор резюме</title>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <div id="form-container">
+     <form id="resumeForm">
+       <fieldset>
+         <legend>Личные данные</legend>
+         <label for="photoUpload">Загрузить фото:</label>
+         <input type="file" id="photoUpload" accept="image/*" onchange="validateImageSize(this)"><br>
+         <label>Название резюме: <input type="text" id="resumeTitle"></label><br>
+         <label>ФИО*: <input type="text" id="fullName" required></label><br>
+         <label>Дата рождения: <input type="date" id="birthDate"></label><br>
+         <label>Город: <input type="text" id="city"></label><br>
+         <label>Номер телефона: <input type="tel" id="phone"></label><br>
+         <label>Email: <input type="email" id="email"></label>
+       </fieldset>
+ 
+       <fieldset id="interestsSection">
+         <legend>Интересы</legend>
+         <div id="interestsList">
+           <div class="interests-entry">
+             <input type="text" name="interests" placeholder="Интерес">
+           </div>
+         </div>
+         <button type="button" onclick="addFieldset('interestsList', 'interests-entry')">Добавить</button>
+         <button type="button" onclick="removeFieldset('interestsList')">Удалить</button>
+       </fieldset>
+ 
+       <fieldset id="languagesSection">
+         <legend>Языки</legend>
+         <div id="languagesList">
+           <div class="language-entry">
+             <input type="text" name="language" placeholder="Язык">
+             <input type="text" name="level" placeholder="Уровень владения">
+           </div> 
+         </div>
+         <button type="button" onclick="addFieldset('languagesList', 'language-entry')">Добавить</button>
+         <button type="button" onclick="removeFieldset('languagesList')">Удалить</button>
+       </fieldset>
+ 
+       <fieldset id="aboutYouSection">
+         <legend>Информация о вас</legend>
+         <textarea id="aboutYou" placeholder="Расскажите о себе"></textarea>
+       </fieldset>
+ 
+       <fieldset id="experienceSection">
+         <legend>Опыт работы</legend>
+         <div id="experienceList">
+           <div class="experience-entry">
+             <input type="text" name="jobTitle" placeholder="Должность">
+             <input type="text" name="company" placeholder="Место работы, город">
+             <input type="date" name="jobStartDate" placeholder="Начало (дата)">
+             <input type="date" name="jobFinishDate" placeholder="Конец (дата)">
+             <textarea name="jobDescription" placeholder="Расскажите кратко о том, чем занимались"></textarea>
+           </div>
+         </div>
+         <button type="button" onclick="addFieldset('experienceList', 'experience-entry')">Добавить</button>
+         <button type="button" onclick="removeFieldset('experienceList')">Удалить</button>
+       </fieldset>
+ 
+       <fieldset id="educationSection">
+         <legend>Образование</legend>
+         <div id="educationList">
+           <div class="education-entry">
+             <input type="text" name="educationLevel" placeholder="Уровень образования">
+             <input type="text" name="institution" placeholder="Место получения">
+             <input type="date" name="eduStartDate" placeholder="Начало (дата)">
+             <input type="date" name="eduFinishDate" placeholder="Завершение (дата)">
+             <input type="text" name="specialization" placeholder="Направление">
+           </div>
+         </div>
+         <button type="button" onclick="addFieldset('educationList', 'education-entry')">Добавить</button>
+         <button type="button" onclick="removeFieldset('educationList')">Удалить</button>
+       </fieldset>
+ 
+       <fieldset id="coursesSection">
+         <legend>Курсы</legend>
+         <div id="coursesList">
+           <div class="course-entry">
+             <input type="text" name="courseName" placeholder="Название курса">
+             <input type="text" name="courseProvider" placeholder="Чей курс (платформа или компания)">
+             <input type="date" name="courseStartDate" placeholder="Начало (дата)">
+             <input type="date" name="courseFinishDate" placeholder="Завершение (дата)">
+           </div>
+         </div>
+         <button type="button" onclick="addFieldset('coursesList', 'course-entry')">Добавить</button>
+         <button type="button" onclick="removeFieldset('coursesList')">Удалить</button>
+       </fieldset>
+ 
+       <button type="button" onclick="generateResume()">Создать резюме</button>
+     </form>
+   </div>
+ 
+   <div id="resume-container" style="display: none;">
+     <button onclick="returnToForm()">Назад</button>
+     <div id="resume"></div>
+     <button onclick="saveResume()">Сохранить</button>
+   </div>
+ 
+   <script src="scripts.js"></script>
+   <script src="html2canvas.min.js"></script>
+ </body>
+ </html>
+
