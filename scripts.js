@@ -268,181 +268,181 @@ function saveResume() {
             <title>Резюме</title>
             <link rel="stylesheet" href="style.css"> 
             <style>
-            .resume-container {
-                width: 900px;
-                max-width: 1200px;
-                margin: 20px auto;
-                padding-right: 20px;
-                background: #F8F8F8;
-                box-shadow: 0 4px 12px 10px rgba(0, 0, 0, 0.1);
-            }
+                .resume-container {
+                    width: 900px;
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding-right: 20px;
+                    background: #F8F8F8;
+                    box-shadow: 0 4px 12px 10px rgba(0, 0, 0, 0.1);
+                }
 
-            .sidebar {
-                width: 20%;
-                min-width: 224px;
-                background: #6495ed;
-                color: #F8F8F8;
-                padding: 20px;
-            }
+                .sidebar {
+                    width: 20%;
+                    min-width: 224px;
+                    background: #6495ed;
+                    color: #F8F8F8;
+                    padding: 20px;
+                }
 
-            .main-content {
-                width: 70%; /* Поменял на 70% для главного контента */
-                padding: 20px;
-            }
+                .main-content {
+                    width: 70%; /* Поменял на 70% для главного контента */
+                    padding: 20px;
+                }
 
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #F8F8F8;
-            }
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #F8F8F8;
+                }
 
-            #form-container {
-                max-width: 800px;
-                margin: 20px auto;
-                padding: 20px;
-                background: #F8F8F8;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
+                #form-container {
+                    max-width: 800px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #F8F8F8;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
 
-            #resume-container {
-                width: 900px;
-                max-width: 1200px;
-                margin: 20px auto;
-                padding: 20px;
-                background: #F8F8F8;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
+                #resume-container {
+                    width: 900px;
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: #F8F8F8;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
 
-            fieldset {
-                border: 1px solid #ccc;
-                padding: 20px;
-                margin: 20px;
-            }
+                fieldset {
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    margin: 20px;
+                }
 
-            legend {
-                font-weight: bold;
-            }
+                legend {
+                    font-weight: bold;
+                }
 
-            input {
-                margin-bottom:5px;
-                margin-top: 5px;
-                margin-right: 5px;
-                margin-left: 0%;
-            }
+                input {
+                    margin-bottom:5px;
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    margin-left: 0%;
+                }
 
-            button {
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding: 5px 10px;
-                background: #6495ed;
-                color: #F8F8F8;
-                border: none;
-                cursor: pointer;
-            }
+                button {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 5px 10px;
+                    background: #6495ed;
+                    color: #F8F8F8;
+                    border: none;
+                    cursor: pointer;
+                }
 
-            button:hover {
-                background: #286090;
-            }
+                button:hover {
+                    background: #286090;
+                }
 
-            .resume-container {
-                display: flex;
-            }
+                .resume-container {
+                    display: flex;
+                }
 
-            .sidebar {
-                width: 20%;
-                min-width: 224px;
-                background: #6495ed;
-                color: #F8F8F8;
-                padding: 20px;
-            }
+                .sidebar {
+                    width: 20%;
+                    min-width: 224px;
+                    background: #6495ed;
+                    color: #F8F8F8;
+                    padding: 20px;
+                }
 
-            .sidebar img {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                margin: 0 auto 20px;
-                display: block;
-                background-color: #F8F8F8;
-            }
+                .sidebar img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin: 0 auto 20px;
+                    display: block;
+                    background-color: #F8F8F8;
+                }
 
-            .main-content {
-                width: 80%;
-                padding: 20px;
-            }
+                .main-content {
+                    width: 80%;
+                    padding: 20px;
+                }
 
-            li {
-                list-style-type: none;
-                margin-top: 0;
-                margin-bottom: 20px;
-                padding: 0;
-                font-weight: bold;
-            }
+                li {
+                    list-style-type: none;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    padding: 0;
+                    font-weight: bold;
+                }
 
-            ul {
-                list-style-type: none;
-                margin-top: 0;
-                padding: 0;
-                font-weight: bold;
-            }
+                ul {
+                    list-style-type: none;
+                    margin-top: 0;
+                    padding: 0;
+                    font-weight: bold;
+                }
 
-            .create-line {
-                width: 224px;
-                border-top: 1px solid #fff;
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
+                .create-line {
+                    width: 224px;
+                    border-top: 1px solid #fff;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
 
-            .create-line-gray {
-                width: 612px;
-                border-top: 1px solid #d3d3d3;
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
+                .create-line-gray {
+                    width: 612px;
+                    border-top: 1px solid #d3d3d3;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
 
 
-            .font-12-5 {
-                font-size: 12.5px;
-                margin-top: 0;
-                padding: 0;
-                font-weight: 400;
-            }
+                .font-12-5 {
+                    font-size: 12.5px;
+                    margin-top: 0;
+                    padding: 0;
+                    font-weight: 400;
+                }
 
-            .font-13-3 {
-                font-size: 13.3px;
-                font-weight: bold;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding: 0;
-            }
+                .font-13-3 {
+                    font-size: 13.3px;
+                    font-weight: bold;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding: 0;
+                }
 
-            .font-15-9 {
-                font-size: 15.9px;
-                font-weight: bold;
-                margin-top: 30px;
-            }
+                .font-15-9 {
+                    font-size: 15.9px;
+                    font-weight: bold;
+                    margin-top: 30px;
+                }
 
-            textarea {
-                resize: none;
-                width: 100%;
-                height: 100px;
-            }
+                textarea {
+                    resize: none;
+                    width: 100%;
+                    height: 100px;
+                }
 
-            .font-13-5 {
-                font-style: italic;
-                font-size: 13.5px;
-                font-weight: 400;
-                padding-top: 0;
-                margin-top: 0;
-            }
+                .font-13-5 {
+                    font-style: italic;
+                    font-size: 13.5px;
+                    font-weight: 400;
+                    padding-top: 0;
+                    margin-top: 0;
+                }
 
-            h3 {
-                margin-top: 35px;
-            }
+                h3 {
+                    margin-top: 35px;
+                }
 
-            h1 {
-                margin-top: 0;
-            }
+                h1 {
+                    margin-top: 0;
+                }
 
             </style>
         </head>
